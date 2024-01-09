@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+.showcase_wrapper{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/movie-poster-background-p5qblffj7cvswl5g.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.showcase_logo img{
+    height: 55px;
+}
+
+.nav_btn{
+    padding: 8px 15px;
+    background-color: rgb(230,16,27);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.showcase_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+.showcase_content{
+    color: whitesmoke;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.showcase_content_text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.showcase_content_text h1{
+    font-size: 50px;
+}
+
+.showcase_content_text h3{
+    font-size: 25px;
+}
+
+.showcase_content_text h3{
+    font-size: 18px;
+}
+
+.showcase_content_input{
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.showcase_content_input input{
+    background-color: rgba(62,62,62,0.8);
+    border-color: rgba(230,16,27,0.7);
+    padding: 18px 24px;
+    width: 25%;
+    font-size: 24px;
+    border-radius: 7px;
+}
+
+.showcase_content_input button{
+    background-color: rgb(230,16,27);
+    color: whitesmoke;
+    border: none;
+    font-size: 24px;
+    padding: 18px 30px;
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.moview{
+    background-color: black;
+    color: rgb(177,177,177);
+}
+
+.container{
+    padding: 0 80px;
+}
+
+.moview_section_img{
+    flex: 1;
+}
+
+.moview_section{
+    height: 100vh;
+    gap: 80px;
+    border-top: 10px solid rgb(52,51,51);
+    align-items: center;
+    display: flex; 
+}
+
+.moview_background_1{
+    height: 550px;
+    width: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(71, 30, 30, 0.7)), url(img/Stranger\ Things\ Season\ 3\ Artwork\ 4K\ Ultra\ HD\ Mobile\ Wallpaper.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.moview_background_2{
+    height: 550px;
+    width: 450px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(71, 30, 30, 0.7)), url(img/legend-of-the-seeker-wallpaper-3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.moview_intro_text{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.moview_text_description{
+    font-size: 25px;
+}
+
+.ball{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(230,16,27);
+    border-radius: 100%;
+}
+
+.red_text{
+    color: rgb(230,16,27);
+    font-size: 30px;
+}
+
+.basic_text{
+    line-height: 20px;
+}
+
+.moview_section-text{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.moview_btn{
+    padding: 8px 15px;
+    background-color: rgb(230,16,27);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.lengend_of_seeker{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moview_background_3{
+    height: 550px;
+    width: 450px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(71, 38, 38, 0.3)), url(img/The\ Woman\ King\ 123.jpg);
+    background-position: right;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.main_footer{
+    border-top: 10px solid rgb(52,51,51);
+    padding: 40px 80px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link{
+    color: rgb(177,177,177);
+}
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_select{
+    background-color: transparent;
+    color: rgb(177,177,177);
+    padding: 10px;
+}
+
+/*Responsiveness Test*/
+
+@media(max-width:768px){
+    .showcase_content_text h1{
+        font-size: 28px;
+    }
+
+    .showcase_content_text h3{
+        font-size: 18px;
+    }
+
+    .showcase_content_input input{
+        width: 40%;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .showcase_content_input button{
+        font-size: 15px;
+    }
+    
+    .moview_section{
+        flex-direction: column;
+       gap: 40px;
+        height: auto;
+        padding: 40px 16px;
+    }
+
+    .moview_background_1,
+    .moview_background_2,
+    .moview_background_3{
+        height: 550px;
+    }
+
+    .main_footer{
+        padding: 25px 16px;
+    }
+}
+
+@media(max-width:425px){
+    .showcase_content_input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .showcase_content_input input{
+        width: 80%;
+    }
+
+    .showcase_content_input button{
+        max-width: fit-content;
+    }
+
+    .moview_background_1,
+    .moview_background_2,
+    .moview_background_3{
+        width: 100vw;
+        border-radius: 0%;
+    }
+
+    .red_text{
+        font-size: 25px;
+    }
+
+    .main_footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    }
